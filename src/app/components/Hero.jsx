@@ -30,7 +30,7 @@ export const Hero = () => {
             <a href="/">Chocolica</a>
           </div>
           <div className="hidden md:flex space-x-20">
-            <a href="#Hero" className="text-gray-300 hover:text-white">Home</a>
+            <a href="/" className="text-gray-300 hover:text-white">Home</a>
             <a href="#Products" className="text-gray-300 hover:text-white">Products</a>
             <a href="#About" className="text-gray-300 hover:text-white">About Us</a>
             <a href="#Contact" className="text-gray-300 hover:text-white">Contact Us</a>

@@ -2,7 +2,7 @@
 import Link from "next/link";
 export const Products = () => {
   return (
-    <div className=" mx-auto py-16 px-6  p-6 w-full h-screen flex flex-col items-center justify-center" >
+    <div id="Products" className=" mx-auto py-16 px-6  p-6 w-full h-screen flex flex-col items-center justify-center" >
       <h1 className="text-4xl font-serif text-center mb-12" style={{ color: "#56423e" }}>Our Products</h1>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-7xl bg-[#f3eed9] p-8 rounded-lg shadow-lg">

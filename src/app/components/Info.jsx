@@ -1,9 +1,13 @@
 "use client"
 import React from "react";
+import ContactForm from "./Contact";
+import { useState } from "react";
 
 export const Info =()=>{
+  const [showContactForm, setShowContactForm] = useState(false);
+
     return (
-        <div className="flex flex-col items-center text-center py-16 px-6 mx-auto p-6 w-full h-screen  justify-center">
+        <div id="Contact" className="flex flex-col items-center text-center py-16 px-6 mx-auto p-6 w-full h-screen  justify-center">
          <div className="mt-12 text-center bg-[#f8f3f1] p-6 rounded-lg shadow-md max-w-5xl mx-auto">
                 <h2 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-3">Looking for Something Special?</h2>
                 <p className="text-gray-600 text-sm sm:text-base max-w-3xl mx-auto mb-4">
@@ -32,12 +36,20 @@ export const Info =()=>{
                   Whether it’s for a birthday, wedding, or any special occasion, we are here to create the "cake of your dreams" that will leave everyone in awe! 🎂✨
                 </p>
         
-                <a
+                {/* <a
                   href="/contact"
                   className="mt-4 inline-block px-6 py-2 bg-[#56423e] text-white text-sm sm:text-base font-medium rounded-full shadow-md hover:bg-[#3d2c29] transition duration-300"
+                > */}
+                  {/* Contact Us Now */}
+                  <button 
+                  onClick={()=>setShowContactForm(true)}
+                  className="mt-4 inline-block px-6 py-2 bg-[#56423e] text-white text-sm sm:text-base font-medium rounded-full shadow-md hover:bg-[#3d2c29] transition duration-300"
                 >
-                  Contact Us Now
-                </a>
+                    contact us now
+                  </button>
+                  {showContactForm && <ContactForm onClose={() => setShowContactForm(false)} />}
+       
+                {/* </a> */}
               </div>
               </div>
     )

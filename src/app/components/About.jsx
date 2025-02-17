@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const About = () => {
   return (
-    <section className="flex flex-col items-center text-center py-16 px-6 mx-auto p-6 w-full h-screen  justify-center">
+    <section id="About" className="flex flex-col items-center text-center py-16 px-6 mx-auto p-6 w-full h-screen  justify-center">
       {/* Heading & Subtitle */}
       <h1 className="text-3xl md:text-4xl font-semibold text-yellow-800 mb-2">
         Freshly Baked!
